@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Righteous', cursive, Arial, sans-serif;
+}
+
+body {
+    background: #3b3b48;
+    margin: auto;
+    transition: .5s; 
+    height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+a:hover {
+    background: black;
+}
+div#buttons {
+    padding: 20px;
+    text-align: center;
+}
+
+.buttons-game {
+    display: grid;
+    place-items: center;
+}
+.buttons-game button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.buttons-game button:hover {
+    background: black;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    margin-bottom: 10px;
+    transition: .5s; 
+}
+
+canvas {
+    width: 350px;
+    height: 350px;
+    display: flex;
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -70%); */
+    margin: 30px auto 10px;
+    box-shadow: 0 0 10px white;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+
+@media screen and (max-width: 410px) {
+    .buttons-game {
+        margin-top: 30px;
+    }
+}
